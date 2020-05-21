@@ -1,0 +1,105 @@
+body {
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: gray;
+}
+
+#top {
+  padding-top: 5px;
+}
+
+#nav {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  justify-content: space-between;
+}
+
+#nav li {
+  display: inline-block;
+  color: rgb(134, 123, 123);
+  font: 1.5em Impact;
+  transition: 0.2s;
+}
+
+/* mugshot details */
+
+#mug {
+  font: bold 2em Impact;
+}
+
+#mugshot {
+  border-radius: 50%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* The following is for hovering text */
+
+.HoverText {
+  cursor: pointer;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  width: 800px;
+  text-align: center;
+}
+.HoverText .content {
+  background-color: gray;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: black;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  opacity: 0;
+  width: 800px;
+  height: 100px;
+  padding: 100px 0px;
+}
+.HoverText:hover .content {
+  opacity: 0.8;
+}
+.HoverText .text {
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  transform: translateY(30px);
+  -webkit-transform: translateY(30px);
+}
+.HoverText .title {
+  font: bold 2em impact;
+  text-transform: uppercase;
+  opacity: 0;
+  transition-delay: 0.2s;
+  transition-duration: 0.3s;
+}
+.HoverText:hover .title,
+.HoverText:focus .title {
+  opacity: 1;
+  transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+}
+
+/* Beginning of footer styling */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  font: 1em Impact;
+}
+
+.social {
+  height: 25px;
+  width: 25px;
+}
